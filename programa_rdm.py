@@ -13,6 +13,10 @@ for i in range(popitok):
         if wopr == n:
             print('Вы отгадали с', (i + 1),'попытки!')
             break
+        if wopr > n:
+            print('Нет, меньше.')
+        if wopr < n:
+            print('Нет, больше.')
     except:
         print('Вы ввели не число.')
 
